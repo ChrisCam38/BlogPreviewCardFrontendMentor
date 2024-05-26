@@ -31,6 +31,11 @@ Global Styles
 
 body {
   background: var(--clr-yellow-1);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: 0;
 }
 
 .container {
@@ -51,7 +56,7 @@ body {
 }
 
 .container:hover {
-  box-shadow: 11px 11px 2px 1px rgba(0, 0, 0, 1);
+  box-shadow: 9px 9px 2px 1px rgba(0, 0, 0, 0.8);
 }
 
 .img-container {
@@ -128,4 +133,52 @@ h1:hover {
 #instructor-name {
   padding-left: 10px;
   font-weight: bolder;
+}
+
+/*
+=============== 
+Small devices
+===============
+*/
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    height: 800px; /* Adjust the height as needed */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dashed red; /* Debug border to see the container */
+  }
+
+  .img-container {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .img-container img {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+.attribution {
+  position: relative;
+}
+
+#name {
+  color: black;
+  font-weight: bold;
+  font-size: l10px;
+  text-decoration: none;
+
 }
