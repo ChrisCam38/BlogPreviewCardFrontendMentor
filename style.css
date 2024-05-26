@@ -173,6 +173,7 @@ Small devices
 
 .attribution {
   position: relative;
+  padding-top: 280px;
 }
 
 #name {
@@ -180,5 +181,4 @@ Small devices
   font-weight: bold;
   font-size: l10px;
   text-decoration: none;
-
 }
