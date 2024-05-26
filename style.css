@@ -1,0 +1,131 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/*
+
+*/
+
+:root {
+  /* fonts */
+  --ff-primary: "Figtree", sans-serif;
+  /*colors*/
+  --clr-yellow-1: hsl(47, 88%, 63%);
+  --clr-gray-1: hsl(0, 0%, 48%);
+  --clr-white-1: #ffffff;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--ff-primary);
+}
+
+body {
+  background: var(--clr-yellow-1);
+}
+
+.container {
+  padding: 0;
+  width: 350px;
+  height: 460px;
+  margin: 50px auto;
+  /* auto centers the container*/
+  background-color: var(--clr-white-1);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 1);
+  /*puts a shadow up and down with 0.2 alpha (opacity) */
+  border: solid;
+  border-width: 0.1em;
+  text-align: center;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 11px 11px 2px 1px rgba(0, 0, 0, 1);
+}
+
+.img-container {
+  margin: 20px 0 0px 0;
+}
+
+.img-container img {
+  border-radius: 10px;
+  max-width: 310px;
+  position: static;
+}
+
+h4 {
+  margin-top: 15px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+span {
+  background-color: var(--clr-yellow-1);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 80%;
+  padding: 5px 10px 5px 10px;
+}
+
+#date {
+  margin-top: 50px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+  position: absolute;
+  font-size: smaller;
+}
+
+h1 {
+  position: absolute;
+  margin-left: 20px;
+  font-size: 1.35rem;
+  font-weight: bolder;
+  margin-top: 80px;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: var(--clr-yellow-1);
+}
+
+.name-row {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+#profile-pic {
+  max-width: 30px;
+}
+
+#description {
+  margin-top: 120px;
+  max-width: 350px;
+  text-align: left;
+  margin-left: 20px;
+  position: absolute;
+  color: var(--clr-gray-1);
+  font-size: 94%;
+}
+
+.name-row {
+  position: absolute;
+  margin-top: 200px;
+}
+
+#instructor-name {
+  padding-left: 10px;
+  font-weight: bolder;
+}
