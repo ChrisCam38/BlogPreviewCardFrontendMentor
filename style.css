@@ -149,38 +149,44 @@ Small devices
     align-items: center;
     min-height: 100vh;
     margin: 0;
+   
   }
 
-  .container {
-    width: 95%;
-    margin: 0 auto;
-    height: 800px; /* Adjust the height as needed */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 2px dashed red; /* Debug border to see the container */
-  }
-
-  .img-container {
-    width: 50%;
-    margin: 10px auto;
+  .container{
+    max-width: 320px;
   }
 
   .img-container img {
-    width: 50%;
-    max-width: 50%;
+    border-radius: 10px;
+    max-width: 90%;
+    position: static;
   }
+  h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .name-row {
+
+    display: flex;
+  
+  }
+  .attribution{
+    display: block;
+
+  }
+
 }
 
-.attribution  {
+.attribution {
   position: relative;
   padding-top: 285px;
   font-size: 11px;
   text-align: center;
 }
 
-#name1, #name2 {
+#name1,
+#name2 {
   color: black;
   font-weight: bold;
   font-size: l10px;
